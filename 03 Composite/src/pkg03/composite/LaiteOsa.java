@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg02.abstractfactory;
-
-import pkg02.abstractfactory.Vaatteet.Vaate;
+package pkg03.composite;
 
 /**
  *
  * @author Osku
  */
-public abstract class AbstractFactory {
-    abstract Vaate haeVaate(String vaateTyyppi);
+public interface LaiteOsa {
+    public int haeHinta();
+    public void lisääOsa(LaiteOsa osa);
 }

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg02.abstractfactory;
+package abstractfactory;
 
-import pkg02.abstractfactory.Vaatteet.BossHattu;
-import pkg02.abstractfactory.Vaatteet.BossHousut;
-import pkg02.abstractfactory.Vaatteet.BossKengät;
-import pkg02.abstractfactory.Vaatteet.BossPaita;
-import pkg02.abstractfactory.Vaatteet.Vaate;
+import abstractfactory.Vaatteet.BossHattu;
+import abstractfactory.Vaatteet.BossHousut;
+import abstractfactory.Vaatteet.BossKengät;
+import abstractfactory.Vaatteet.BossPaita;
+import abstractfactory.Vaatteet.Vaate;
 
 /**
  *

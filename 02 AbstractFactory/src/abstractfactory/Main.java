@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg02.abstractfactory;
+package abstractfactory;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import pkg02.abstractfactory.Vaatteet.Vaate;
+import abstractfactory.Vaatteet.Vaate;
 
 /**
  *
@@ -31,8 +31,6 @@ public class Main {
         for(Vaate vaate : vaatteet) {
             vaate.pue();
         }
-        
-        
         
         Iterator<Vaate> iteraattori = vaatteet.iterator();
         System.out.print("Jasperilla on ");

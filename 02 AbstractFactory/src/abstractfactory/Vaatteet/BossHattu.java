@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg02.abstractfactory.Vaatteet;
+package abstractfactory.Vaatteet;
 
 /**
  *
  * @author Osku
  */
-public class AdidasLippis implements Vaate{
+public class BossHattu implements Vaate{
     
     public void pue() {
-        System.out.println("Adidas lippis puettu!");
+        System.out.println("Bossin hattu puettu!");
     }
     
     public String toString() {
-        return "Adidas lippis";
+        return "Boss hattu";
     }
 }

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg02.abstractfactory;
+package abstractfactory;
 
-import pkg02.abstractfactory.Vaatteet.AdidasHousut;
-import pkg02.abstractfactory.Vaatteet.AdidasKengät;
-import pkg02.abstractfactory.Vaatteet.AdidasLippis;
-import pkg02.abstractfactory.Vaatteet.AdidasPaita;
-import pkg02.abstractfactory.Vaatteet.Vaate;
+import abstractfactory.Vaatteet.AdidasHousut;
+import abstractfactory.Vaatteet.AdidasKengät;
+import abstractfactory.Vaatteet.AdidasLippis;
+import abstractfactory.Vaatteet.AdidasPaita;
+import abstractfactory.Vaatteet.Vaate;
 
 /**
  *
