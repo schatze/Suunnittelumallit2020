@@ -13,19 +13,13 @@ import java.util.List;
  * @author Osku
  */
 public class Näytönohjain  implements LaiteOsa {
-    List<LaiteOsa> osat = new ArrayList();
     
     int hinta = 300;
     
     public int haeHinta() {
-        int osienHinta = 0;
-        
-        for(LaiteOsa osa : osat) {
-            osienHinta += osa.haeHinta();
-        }
-        
-        return osienHinta + this.hinta;
+        return this.hinta;
     }
+    
     
     public void lisääOsa(LaiteOsa osa) {
         throw new RuntimeException("Ei voi lisätä osia näytönohjaimeen");
