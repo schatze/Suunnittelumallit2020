@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg03.composite;
+package composite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +12,10 @@ import java.util.List;
  *
  * @author Osku
  */
-public class Emolevy implements LaiteOsa {
+public class Verkkokortti implements LaiteOsa {
     List<LaiteOsa> osat = new ArrayList();
     
-    int hinta = 200;
+    int hinta = 40;
     
     public int haeHinta() {
         int osienHinta = 0;
@@ -28,6 +28,6 @@ public class Emolevy implements LaiteOsa {
     }
     
     public void lisääOsa(LaiteOsa osa) {
-        osat.add(osa);
+        throw new RuntimeException("Ei voi lisätä osia verkkokortiin");
     }
 }
