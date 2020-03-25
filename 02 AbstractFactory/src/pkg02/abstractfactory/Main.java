@@ -21,7 +21,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Set<Vaate> vaatteet = new HashSet();
-        AbstractFactory vaateTehdas = TehtaanTuottaja.haeTehdas("adidas");
+        AbstractFactory vaateTehdas = TehtaanTuottaja.haeTehdas("adidas");  // tässä voi vaihtaa merkkiä/tehdasta
         
         vaatteet.add(vaateTehdas.haeVaate("paita"));
         vaatteet.add(vaateTehdas.haeVaate("päähine"));
