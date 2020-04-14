@@ -12,12 +12,14 @@ import java.util.Random;
  * @author Osku
  */
 public class Arvaaja {
-    Memento memento;
+    Object memento;
     Arvuuttaja arvuuttaja;
     
     String nimi;
     
     Random rand = new Random();
+    
+    int arvaukset = 0;
     
     public Arvaaja(String nimi) {
         this.nimi = nimi;
@@ -32,9 +34,11 @@ public class Arvaaja {
         int luku = rand.nextInt(99) + 1;
         
         if(arvuuttaja.tarkista(memento, luku)) {
-            System.out.println(nimi + " arvasi oikein (" + luku + ")!!!");
+            arvaukset++;
+            System.out.println(nimi + " arvasi oikein (" + luku + ")!!! Yrityksiä meni " + arvaukset);
             return true;
         } else {
+            arvaukset++;
             System.out.println(nimi + " arvasi väärin (" + luku + ")");
             return false;
         }
