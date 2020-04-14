@@ -55,9 +55,9 @@ public class KSP extends Game {
     boolean endOfGame() {
         
         
-        if( (kädet[0] == 1 && kädet[1] == 3) ||
-            (kädet[0] == 3 && kädet[1] == 2) ||
-            (kädet[0] == 2 && kädet[1] == 1)) {
+        if( (kädet[0] == 1 && kädet[1] == 3) ||     // Kivi voittaa sakset
+            (kädet[0] == 3 && kädet[1] == 2) ||     // sakset voittaa paperin
+            (kädet[0] == 2 && kädet[1] == 1)) {     // paperi voittaa kiven
             gameStatus = "Player 1 wins";
         } else {
             gameStatus = "Player 2 wins";
