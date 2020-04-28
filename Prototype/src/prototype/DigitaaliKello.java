@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package adapter;
+package prototype;
 
 /**
  *
  * @author Osku
  */
-public class Olut implements IOlut {
-    private String  nimi;
+public class DigitaaliKello extends Kello {
     
-    public Olut(String nimi) {
-        this.nimi = nimi;
+    @Override
+    public void kelloKäy() {
+        ajastin += 10;
     }
     
-    public void juo() {
-        System.out.println(nimi + " olut juotu!");
-    }
 }
