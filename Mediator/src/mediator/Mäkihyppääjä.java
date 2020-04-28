@@ -23,7 +23,9 @@ public class Mäkihyppääjä {
     Random rand = new Random();
     
     public void hyppää() {
-        mediator.otaHyppyVastaan(this, rand.nextInt(300));
+        int pituus = rand.nextInt(300);
+        System.out.println("Mäkihyppääjä " + nimi + " hyppäsi " + pituus);
+        mediator.otaHyppyVastaan(this, pituus);
     }
     
     public String getName() {
